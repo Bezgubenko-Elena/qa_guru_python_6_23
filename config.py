@@ -3,8 +3,8 @@ from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
-    USERNAME: str
-    ACCESSKEY: str
+    b_username: str
+    b_key: str
     browserstack_url: str = 'http://hub.browserstack.com/wd/hub'
     app_url: str = 'bs://sample.app'
     project_name: str = 'First Python Mobile'
@@ -16,5 +16,3 @@ class Settings(BaseSettings):
 
 
 settings = Settings(_env_file=dotenv.find_dotenv('.env'))
-
-# config = Config(_env_file=dotenv.find_dotenv('.env'))

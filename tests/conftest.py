@@ -23,8 +23,8 @@ def mobile_management():
             'buildName': config.settings.build_name,
             'sessionName': config.settings.session_name,
 
-            'userName': config.settings.USERNAME,
-            'accessKey': config.settings.ACCESSKEY
+            'userName': config.settings.b_username,
+            'accessKey': config.settings.b_key
         }
     })
 
